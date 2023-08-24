@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto+Mono:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f6cece;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.calculator {
+    border: 2px solid #ff8181; /* Red border */
+    border-radius: 20px; /* Rounded corners */
+    width: 350px; /* Adjusted width */
+    background-color: #ffd3d3; /* Light pink background */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    padding: 15px; /* Increased padding for the screen */
+    border-bottom: 2px solid #ff8181; /* Red border */
+    text-align: right;
+    width: 100%;
+    background-color: #fff; /* White background */
+    border-top-left-radius: 18px; /* Rounded top left corner */
+    border-top-right-radius: 18px; /* Rounded top right corner */
+    margin-bottom: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.expression {
+    font-size: 22px; /* Increased font size for better visibility */
+    color: #888; /* Dark gray text color */
+}
+
+.result {
+    font-size: 32px; /* Increased font size for better visibility */
+    margin-top: 5px;
+    color: #ff3535; /* Red text color */
+    min-height: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #444; /* Dark gray text color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 50%; /* Rounded shape */
+    width: 70px; /* Button width */
+    height: 70px; /* Button height */
+    display: grid;
+    place-items: center; /* Center content */
+    font-family: 'Kdam Thmor Pro', sans-serif; /* Apply the custom font */
+    margin: 5px; /* Add margin */
+}
+
+button:hover {
+    background-color: #ddd;
+    color: #ff3535; /* Red text color */
+}
+
+.number {
+    background-color: #fff;
+    color: #444; /* Dark gray text color */
+}
+
+.operator {
+    background-color: #fff;
+    color: #ff8181; /* Light red text color */
+}
+.backspace {
+    background-color: #fff;
+    color: #ff8181; /* Light red text color */
+}
+
+.equal {
+    background-color: #fff;
+    color: #505c8a; /* Teal text color */
+}
+
+.clear {
+    grid-column: span 2;
+    color: #ff8181;
+}
